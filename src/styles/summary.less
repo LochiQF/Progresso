@@ -1,0 +1,26 @@
+.summary {
+    float: right;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 40px 0;
+    font-size: @item-font-size;
+    .data {
+        align-items: center;
+        .summary-value {
+            float: right;
+            padding-left: 10px;
+        }
+        .all {
+            color: white;
+        }
+        .completed {
+            color: @green;
+            padding-top: 2px;
+        }
+        .paused {
+            color: @yellow;
+            padding-top: 2px;
+        }
+    }
+}

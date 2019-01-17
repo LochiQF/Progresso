@@ -1,0 +1,39 @@
+@import 'variables';
+
+body {
+    margin: 0;
+    padding: 0;
+    background: @bg;
+    color: @font-color;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: lighter;
+    #app {
+        position: relative;
+        margin: 40px auto;
+        width: 550px;
+    }
+}
+
+.header {
+    height: 120px;
+}
+
+::-webkit-scrollbar {
+    background-color: @bg;
+    width: 1em;
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+    background: @input-color;
+    border: 3px solid @bg;
+    border-radius: 0.5em;
+}
+
+@import 'date';
+@import 'form';
+@import 'item';
+@import 'itemlist';
+@import 'progress';
+@import 'summary';
+@import 'group';

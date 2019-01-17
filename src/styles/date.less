@@ -1,0 +1,34 @@
+.generate-color() {
+    @r: `(Math.random()+0.1) * 253`;
+    @g: `(Math.random()+0.1) * 253`;
+    @b: `(Math.random()+0.1) * 253`;
+    @color: (rgb(@r, @g, @b));
+}
+
+.generate-color();
+
+.date {
+    float: left;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 40px 0;
+    font-size: @item-font-size;
+    .calendar {
+        display: flex;
+        align-items: center;
+        .time, .day {
+            color: @cyan;
+        }
+        .day {
+            font-size: @big-font-size;
+            font-weight: bold;
+        }
+        .ttm {
+            padding: 0 0 0 5px;
+            .month {
+                font-weight: bold;
+            }
+        }
+    }
+}
