@@ -43,7 +43,7 @@ cd Progresso && npm install
  npm run build:win
  ```
 
- - Windows
+ - OSX
  ```
  npm run package-mac
  npm run build:mac
